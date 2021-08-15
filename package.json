@@ -1,0 +1,39 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "This is the repository, I will use for learning JS with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riteeksrivastav/js-start-point.git"
+  },
+  "author": "ritee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riteeksrivastav/js-start-point/issues"
+  },
+  "homepage": "https://github.com/riteeksrivastav/js-start-point#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.12",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
