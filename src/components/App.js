@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from './Header';
 
-const App = () => {
-    return (
-       <div className = "App">
-           <Header message = "This is the first react component with props"/>
-           <div>
-                ...
-           </div>
-       </div>
-    );
+class App extends React.Component {
+    state = {
+        pageHeader: 'This header is stateful and will change with the state of the app'
+    }
+    render() {
+        return (
+        <div className = "App">
+            <Header message = {this.state.pageHeader} />
+            <div>
+                    ...
+            </div>
+        </div>
+        );
+    };
 };
 
 export default App;
