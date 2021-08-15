@@ -3,23 +3,33 @@ import ReactDom from 'react-dom'
 import PropTypes from 'prop-types';
 import propTypes from 'prop-types';
 
-const color = Math.random() > 0.5 ? 'green' : 'blue'
-
-const App = (props) => {
+const Header = ({message}) => {
     return (
-        <h2 className = 'text-center'>
-            {props.headerMessage}
+        <h2 className = "Header text-center">
+            {message}
         </h2>
     )
 }
 
-App.propType = {
-    headerMessage: propTypes.string
+Header.propType = {
+    message: propTypes.string
 }
 
-App.defaultProps = {
-    headerMessage: "Hello!"
+Header.defaultProps = {
+    message: "Hello!"
 }
+
+const App = () => {
+    return (
+       <div className = "App">
+           <Header message = "This is the first react component with props"/>
+           <div>
+                ...
+           </div>
+       </div>
+    )
+}
+
 
 ReactDom.render(
     <App headerMessage="This is the first react component with props"/>,
