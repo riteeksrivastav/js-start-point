@@ -10,6 +10,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'json-loader'
+        }
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
