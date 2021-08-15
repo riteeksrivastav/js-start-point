@@ -3,10 +3,15 @@ import ReactDom from 'react-dom'
 
 const color = Math.random() > 0.5 ? 'green' : 'blue'
 
+const App = () => {
+    return (
+        <h2 className = 'text-center'>
+            This is the first react component
+        </h2>
+    )
+}
+
 ReactDom.render(
-    // React.createElement('h2', null, 'Hi this my first reactdom'),
-    <h2 style={{color}} className = 'text-center'>
-        Hi, this is my first React DOM
-    </h2>,
+    <App />,
     document.getElementById('root')
 )
