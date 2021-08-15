@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import App from './components/App';
 
-import Data from '.testData';
-console.log(Data)
+import data from './testData';
+console.log(data)
 
 ReactDom.render(
     <App />,
